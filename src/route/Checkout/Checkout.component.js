@@ -8,7 +8,7 @@ import ProgressiveContainer from "component/Progressive/Progressive.container";
 import "./Checkout.extension.style.scss";
 
 class Checkout extends SourceCheckout {
-  renderProgressBar() {
+  progressBar = () => {
     const stepsArray = [
       {
         id: SHIPPING_STEP,
