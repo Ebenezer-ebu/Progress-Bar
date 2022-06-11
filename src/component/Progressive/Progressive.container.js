@@ -7,7 +7,7 @@ class ProgressiveContainer extends PureComponent {
 
   setStep = () => {
     let order = 1;
-
+    console.log(this.props);
     this.props.progressSteps.forEach((step, idx) => {
       if (step.id === this.props.checkoutStep) {
         order = idx + 1;
@@ -17,6 +17,7 @@ class ProgressiveContainer extends PureComponent {
   };
   componentDidMount() {
     const newOrder = this.setStep();
+    console.log(newOrder);
     this.setState({ order: newOrder });
   }
 

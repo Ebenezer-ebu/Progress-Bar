@@ -20,14 +20,13 @@ class Checkout extends SourceCheckout {
       },
       { id: DETAILS_STEP, title: "Success" },
     ];
-
     return (
       <ProgressiveContainer
         progressSteps={stepsArray}
         checkoutStep={this.props.checkoutStep}
       />
     );
-  }
+  };
 }
 
 export default Checkout;
