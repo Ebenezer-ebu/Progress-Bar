@@ -1,5 +1,5 @@
 .Progressive {
-  height: 5rem;
+  height: 7rem;
   grid-area: 1/1/2/4;
 
   display: flex;
@@ -9,7 +9,7 @@
   background-color: var(--breadcrumbs-background);
   margin-left: -1.2rem;
   margin-right: 1.2rem;
-  margin-top: 10rem;
+  padding-top: 2.5rem;
 
   & .bar {
     height: 4px;
