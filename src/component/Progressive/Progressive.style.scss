@@ -9,6 +9,7 @@
   background-color: var(--breadcrumbs-background);
   margin-left: -1.2rem;
   margin-right: 1.2rem;
+  margin-top: 10rem;
 
   & .bar {
     height: 4px;
@@ -45,7 +46,6 @@
   & .filled-bar-step-pointer {
     background-color: var(--primary-base-color);
     animation: turning 2s ease-in-out alternate;
-
   }
   & .empty-bar-step-pointer {
     background-color: #686868;
@@ -81,20 +81,19 @@
     border-top: 2px solid #fff;
   }
 }
-.Progressive::before{
-  content:'';
-  position:absolute;
+.Progressive::before {
+  content: "";
+  position: absolute;
   left: -20%;
-  top:0;
+  top: 0;
   width: 140vw;
   height: 5rem;
   background-color: var(--breadcrumbs-background);
-
 }
 @keyframes progressing {
   0% {
     transform: scale(1);
-    border:solid 1px var(--primary-base-color);
+    border: solid 1px var(--primary-base-color);
     background-color: transparent;
     opacity: 70%;
   }
@@ -106,7 +105,7 @@
 }
 @keyframes turning {
   0% {
-    border:solid 1px var(--primary-base-color);
+    border: solid 1px var(--primary-base-color);
     background-color: transparent;
     opacity: 50%;
   }

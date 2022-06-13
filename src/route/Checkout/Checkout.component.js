@@ -22,11 +22,12 @@ class Checkout extends SourceCheckout {
       { id: DETAILS_STEP, title: "Success" },
     ];
     return (
-      <ProgressiveContainer
-        progressSteps={stepsArray}
-        checkoutStep={this.props.checkoutStep}
-      >
-        <main block="Checkout">
+      <>
+        <ProgressiveContainer
+          progressSteps={stepsArray}
+          checkoutStep={this.props.checkoutStep}
+        />
+        <main>
           <ContentWrapper
             wrapperMix={{ block: "Checkout", elem: "Wrapper" }}
             label={__("Checkout page")}
@@ -45,14 +46,12 @@ class Checkout extends SourceCheckout {
             </div>
           </ContentWrapper>
         </main>
-      </ProgressiveContainer>
+      </>
     );
   };
 
   render() {
-    return (
-      this.progressBar()
-    )
+    return this.progressBar();
   }
 }
 
